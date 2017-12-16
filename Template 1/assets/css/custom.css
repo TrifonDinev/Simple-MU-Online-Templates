@@ -1,0 +1,131 @@
+body {
+	background: url(../images/background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center 35px;
+}
+
+.margin-top  {
+	margin-top: 300px;
+}
+
+.float-right{
+	float: right;
+}
+
+.status-online{
+	color: green;
+}
+
+.status-offline{
+	color: red;
+}
+
+footer.nb-footer {
+	margin-top: -22px; 
+	background: #222;
+	border-top: 4px solid #b78c33;
+}
+
+footer.nb-footer .about {
+	text-align: center;
+	margin-top: 40px;
+	max-width: 1170px;
+}
+
+footer.nb-footer .about p {
+	font-size: 13px;
+	color: #999;
+	margin-top: 30px; 
+}
+
+footer.nb-footer .about .social-media {
+	margin-top: 15px;
+}
+
+.fa-facebook {
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	border-radius: 50%;
+	font-size: 16px;
+	background: #29487d;
+	color: #fff;
+	border-color: #b78c33;
+	border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.fa-twitter {
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	border-radius: 50%;
+	font-size: 16px;
+	background: #1da1f2;
+	color: #fff;
+	border-color: #b78c33;
+	border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.fa-google-plus {
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	border-radius: 50%;
+	font-size: 16px;
+	background: #d34836;
+	color: #fff;
+	border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.fa-linkedin{
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	border-radius: 50%;
+	font-size: 16px;
+	background: #0084bf;
+	color: #fff;
+	border-color: #b78c33;
+	border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+footer.nb-footer .footer-info-single {
+	margin-top: 30px;
+}
+
+footer.nb-footer .footer-info-single .title {
+	color: #aaa;
+	text-transform: uppercase;
+	font-size: 16px;
+	border-left: 4px solid #b78c33;
+	padding-left: 5px;
+}
+
+footer.nb-footer .footer-info-single ul li a {
+	display: block;
+	color: #aaa;
+	padding: 2px 0;
+}
+
+footer.nb-footer .footer-info-single p {
+	font-size: 13px;
+	line-height: 20px;
+	color: #aaa;
+}
+
+footer.nb-footer .copyright {
+	margin-top: 15px;
+	background: #111;
+	padding: 7px 0;
+	color: #999;
+}
+
+footer.nb-footer .copyright p {
+	margin: 0;
+	padding: 0;
+}
