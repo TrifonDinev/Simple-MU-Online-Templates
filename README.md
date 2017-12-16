@@ -4,8 +4,6 @@ Templates are using <a href="https://getbootstrap.com/docs/3.3/">Bootstrap v3.3.
 
 Each template has valid HTML5 and CSS3 (custom.css) code.
 
-In each template folder has 2 preview photos.
-
 In Coming Soon Template folder has more than one background image, which u can find in assets/images folder.
 
 If u want to use some template for your system, please leave the footer credits or just add Template By Trifon Dinev !!!
