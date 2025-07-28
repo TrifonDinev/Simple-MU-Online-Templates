@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Simple MU Online Template Made With Bootstrap by Trifon Dinev">
+	<meta name="author" content="Trifon Dinev">
+
+	<!-- Title -->
+	<title>Your Project/Site Title</title>
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body class="d-flex flex-column">
+
+	<!-- Navigation Bar -->
+	<nav class="top-navbar">
+		<div class="container d-flex flex-wrap align-items-center">
+			<!-- Language dropdown -->
+			<ul class="nav me-auto align-items-center">
+				<li class="nav-item dropdown">
+					<a id="languageDropdown" class="nav-link dropdown-toggle px-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Select language">
+						<img src="assets/images/flags/16x12/us.png" width="16" height="12" alt="English" class="me-1">
+						English
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="languageDropdown">
+						<li><a class="dropdown-item" href="#"><img src="assets/images/flags/16x12/us.png" width="16" height="12" alt="English" class="me-2">English</a></li>
+						<li><a class="dropdown-item" href="#"><img src="assets/images/flags/16x12/bg.png" width="16" height="12" alt="Bulgarian" class="me-2">Bulgarian</a></li>
+						<li><a class="dropdown-item" href="#"><img src="assets/images/flags/16x12/ru.png" width="16" height="12" alt="Russian" class="me-2">Russian</a></li>
+						<li><a class="dropdown-item" href="#"><img src="assets/images/flags/16x12/fr.png" width="16" height="12" alt="French" class="me-2">Français</a></li>
+						<li><a class="dropdown-item" href="#"><img src="assets/images/flags/16x12/de.png" width="16" height="12" alt="German" class="me-2">Deutsch</a></li>
+						<li><a class="dropdown-item" href="#"><img src="assets/images/flags/16x12/es.png" width="16" height="12" alt="Spanish" class="me-2">Español</a></li>
+					</ul>
+				</li>
+			</ul>
+
+			<!-- Hamburger toggle for mobile/tablet (visible only on small screens) -->
+			<button class="navbar-toggler border-0 d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+				<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi" fill="currentColor" viewBox="0 0 16 16">
+					<path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+				</svg>
+			</button>
+
+			<!-- Regular Username Icon (visible only on large screens) -->
+			<div class="nav d-none d-lg-flex align-items-center">
+				<div class="dropdown text-end">
+					<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="userDropdownLg">
+						<!-- User icon and username -->
+						<span class="d-inline-flex align-items-center justify-content-center rounded-circle bg-light bg-opacity-10 p-2">
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 24 24" aria-hidden="true">
+								<path d="M12 12c2.76 0 5-2.24 5-5S14.76 2 12 2 7 4.24 7 7s2.24 5 5 5zm0 2c-3.33 0-10 1.67-10 5v2h20v-2c0-3.33-6.67-5-10-5z"></path>
+							</svg>
+						</span>
+						<span class="ms-1">Username</span>
+					</a>
+					<ul class="dropdown-menu text-small">
+						<li><a class="dropdown-item" href="#">Settings</a></li>
+						<li><a class="dropdown-item" href="#">Profile</a></li>
+						<li><hr class="dropdown-divider"></li>
+						<li><a class="dropdown-item" href="#">Sign out</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Header Section (Main Navbar, hidden on mobile) -->
+	<header class="navbar navbar-expand-lg transparent-header p-3 mb-3 d-none d-lg-block">
+		<div class="container">
+			<!-- Main Navigation links (visible on large screens) -->
+			<div class="collapse navbar-collapse justify-content-center" id="mainNav">
+				<ul class="navbar-nav mb-2 mb-lg-0">
+					<li class="nav-item"><a href="#" class="nav-link text-white">Home</a></li>
+					<li class="nav-item"><a href="#" class="nav-link text-white">Rankings</a></li>
+					<li class="nav-item"><a href="#" class="nav-link text-white">Download</a></li>
+					<li class="nav-item"><a href="#" class="nav-link text-white">Info</a></li>
+					<li class="nav-item"><a href="#" class="nav-link text-white">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<!-- Offcanvas Menu for Mobile -->
+	<div class="offcanvas offcanvas-start w-100" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+		<div class="offcanvas-header border-bottom">
+			<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+			<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		</div>
+
+		<div class="offcanvas-body">
+			<!-- Main Navigation links in Offcanvas -->
+			<ul class="navbar-nav">
+				<li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Rankings</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Download</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Info</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+			</ul>
+
+			<!-- Username and Icon in Offcanvas (replaces regular icon on mobile) -->
+			<div class="nav d-none d-lg-flex align-items-center">
+				<div class="dropdown text-end">
+					<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="userDropdownMobile">
+						<!-- User icon and username -->
+						<span class="d-inline-flex align-items-center justify-content-center rounded-circle bg-light bg-opacity-10 p-2">
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 24 24" aria-hidden="true">
+								<path d="M12 12c2.76 0 5-2.24 5-5S14.76 2 12 2 7 4.24 7 7s2.24 5 5 5zm0 2c-3.33 0-10 1.67-10 5v2h20v-2c0-3.33-6.67-5-10-5z"></path>
+							</svg>
+						</span>
+						<span class="ms-2">Username</span>
+					</a>
+					<ul class="dropdown-menu text-small">
+						<li><a class="dropdown-item" href="#">Settings</a></li>
+						<li><a class="dropdown-item" href="#">Profile</a></li>
+						<li><hr class="dropdown-divider"></li>
+						<li><a class="dropdown-item" href="#">Sign out</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Username Dropdown in Offcanvas (Mobile/Tablet Version) -->
+			<!-- (!) Display it only if user is logged in (has session) -->
+			<div class="dropdown mb-3">
+				<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+					<span class="d-inline-flex align-items-center justify-content-center rounded-circle p-2">
+						<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+							<path d="M12 12c2.76 0 5-2.24 5-5S14.76 2 12 2 7 4.24 7 7s2.24 5 5 5zm0 2c-3.33 0-10 1.67-10 5v2h20v-2c0-3.33-6.67-5-10-5z"></path>
+						</svg>
+					</span>Username
+				</a>
+
+				<ul class="dropdown-menu text-small">
+					<li><a class="dropdown-item" href="#">Settings</a></li>
+					<li><a class="dropdown-item" href="#">Profile</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="#">Sign out</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- Small Server Statistics -->
+	<div class="container mt-5">
+		<div class="row justify-content-left">
+			<div class="col-lg-4">
+				<div class="bg-dark bg-opacity-50 rounded-4 p-3 shadow-lg overflow-hidden">
+					<div class="d-flex justify-content-between align-items-center">
+						<!-- Game Icon on the left -->
+						<div class="flex-shrink-0 rounded-full p-2">
+							<img src="assets/images/icon.png" width="130" height="70" alt="Server Icon" class="img-fluid">
+						</div>
+
+						<!-- Stats Content on the right -->
+						<div class="flex-1 text-end ms-4">
+							<p class="text-light text-sm mb-2">Players Online: <span class="badge bg-primary text-white text-xs font-semibold" id="players-online">123</span></p>
+							<p class="text-light text-sm mb-2">Server Time: <span class="badge bg-danger text-white text-xs font-semibold" id="server-time">17:26:44</span></p>
+							<p class="text-light text-sm mb-2">Your Time: <span class="badge bg-success text-white text-xs font-semibold" id="user-time">18:26:44</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Main Content Section -->
+	<div class="container my-5">
+		<div class="p-4 bg-light shadow-lg">
+			<div class="row">
+
+				<!-- Left Side (News Section) -->
+				<div class="col-12 col-lg-8 bg-white border p-3 shadow-sm">
+					<h2 class="fw-bold mb-5 text-center text-dark">MU Online Server Latest News</h2>
+
+					<!-- News Item 1 -->
+					<div class="news-item mb-4 p-4 border rounded-3 shadow-sm">
+						<div class="d-flex justify-content-between align-items-center mb-2">
+							<span class="text-muted fs-6">July 23, 2025</span>
+							<span class="badge text-bg-primary rounded-pill px-3 py-2">Game Update</span>
+						</div>
+						<h5 class="news-title text-dark fs-5 fw-bold mb-2">Update: New Game Patch!</h5>
+						<p class="news-description text-muted mb-3">Our latest patch just dropped with exciting new features. Make sure to check out the new gameplay modes and improvements.</p>
+						<a href="#" class="text-decoration-none text-primary fs-6">Read more</a>
+					</div>
+
+					<!-- News Item 2 -->
+					<div class="news-item mb-4 p-4 border rounded-3 shadow-sm">
+						<div class="d-flex justify-content-between align-items-center mb-2">
+							<span class="text-muted fs-6">July 22, 2025</span>
+							<span class="badge text-bg-warning rounded-pill px-3 py-2">Maintenance</span>
+						</div>
+						<h5 class="news-title text-dark fs-5 fw-bold mb-2">Server Maintenance Coming Up</h5>
+						<p class="news-description text-muted mb-3">Our servers will undergo maintenance on Saturday at 2 AM. Please plan accordingly for uninterrupted gameplay.</p>
+						<a href="#" class="text-decoration-none text-primary fs-6">Learn more</a>
+					</div>
+
+					<!-- News Item 3 -->
+					<div class="news-item mb-4 p-4 border rounded-3 shadow-sm">
+						<div class="d-flex justify-content-between align-items-center mb-2">
+							<span class="text-muted fs-6">July 21, 2025</span>
+							<span class="badge text-bg-success rounded-pill px-3 py-2">Event</span>
+						</div>
+						<h5 class="news-title text-dark fs-5 fw-bold mb-2">New Event: Weekend Tournament</h5>
+						<p class="news-description text-muted mb-3">Join our weekend tournament and compete for exciting rewards. The event starts this Friday, don't miss out!</p>
+						<a href="#" class="text-decoration-none text-primary fs-6">Sign up now</a>
+					</div>
+
+					<!-- Pagination -->
+					<div class="d-flex justify-content-center mt-5">
+						<nav aria-label="News pagination">
+							<ul class="pagination pagination-md">
+								<li class="page-item">
+									<a class="page-link" href="#" aria-label="Previous">
+										<span aria-hidden="true">&laquo;</span>
+									</a>
+								</li>
+								<li class="page-item active"><a class="page-link" href="#">1</a></li>
+								<li class="page-item"><a class="page-link" href="#">2</a></li>
+								<li class="page-item"><a class="page-link" href="#">3</a></li>
+								<li class="page-item">
+									<a class="page-link" href="#" aria-label="Next">
+										<span aria-hidden="true">&raquo;</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+
+				<!-- Right side (Login Panel + Ranking Stats) -->
+				<div class="col-12 col-lg-4 bg-white border p-3 shadow-sm">
+					<!-- Login Panel -->
+					<div class="bg-white mb-4 p-4 border rounded-3 shadow-sm">
+						<p class="text-center mb-4 fs-5 fw-bold">Login to Your Account</p>
+						<form action="#" method="POST">
+							<div class="mb-3">
+								<input type="text" class="form-control border-2 rounded-3 shadow-sm" id="username" placeholder="Username" required="">
+							</div>
+							<div class="mb-3">
+								<input type="password" class="form-control border-2 rounded-3 shadow-sm" id="password" placeholder="Password" required="">
+							</div>
+							<div class="text-center">
+								<button type="submit" class="btn btn-primary w-100 py-2 px-4 rounded-pill shadow-sm">Login</button>
+							</div>
+						</form>
+					</div>
+
+					<!-- Ranking Stats Section -->
+					<div class="col-12 bg-white p-4 border rounded-3 shadow-sm">
+						<h5 class="text-center mb-4 text-dark fw-bold">Top 15 Rankings</h5>
+						<!-- Nav tabs to switch ranking types -->
+						<ul class="nav nav-tabs justify-content-center mb-4" id="rankingTabs" role="tablist">
+							<li class="nav-item" role="presentation">
+								<button class="nav-link active" id="ranking-rr-tab" data-bs-toggle="tab" data-bs-target="#ranking-rr" type="button" role="tab" aria-controls="ranking-rr" aria-selected="true">RR</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="ranking-kills-tab" data-bs-toggle="tab" data-bs-target="#ranking-kills" type="button" role="tab" aria-controls="ranking-kills" aria-selected="false">Kills</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="ranking-points-tab" data-bs-toggle="tab" data-bs-target="#ranking-points" type="button" role="tab" aria-controls="ranking-points" aria-selected="false">Points</button>
+							</li>
+						</ul>
+
+						<!-- Tab panes -->
+						<div class="tab-content" id="rankingTabsContent">
+							<!-- RR Rankings -->
+							<div class="tab-pane fade show active" id="ranking-rr" role="tabpanel" aria-labelledby="ranking-rr-tab">
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped mb-0">
+										<thead>
+											<tr>
+												<th>#</th>
+												<th>Name</th>
+												<th>RR</th>
+												<th>Status</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr><td>1</td><td>Player1</td><td>400</td><td><span class="text-success">Online</span></td></tr>
+											<tr><td>2</td><td>Player2</td><td>380</td><td><span class="text-danger">Offline</span></td></tr>
+											<tr><td>3</td><td>Player3</td><td>350</td><td><span class="text-success">Online</span></td></tr>
+											<tr><td>4</td><td>Player1</td><td>400</td><td><span class="text-success">Online</span></td></tr>
+											<tr><td>5</td><td>Player2</td><td>380</td><td><span class="text-danger">Offline</span></td></tr>
+											<tr><td>6</td><td>Player3</td><td>350</td><td><span class="text-success">Online</span></td></tr>
+											<tr><td>7</td><td>Player1</td><td>400</td><td><span class="text-success">Online</span></td></tr>
+											<tr><td>8</td><td>Player2</td><td>380</td><td><span class="text-danger">Offline</span></td></tr>
+											<tr><td>9</td><td>Player3</td><td>350</td><td><span class="text-success">Online</span></td></tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+
+							<!-- Kills Rankings -->
+							<div class="tab-pane fade" id="ranking-kills" role="tabpanel" aria-labelledby="ranking-kills-tab">
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped mb-0">
+										<thead>
+											<tr>
+												<th>#</th>
+												<th>Name</th>
+												<th>Kills</th>
+												<th>Status</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr><td>1</td><td>PlayerA</td><td>120</td><td><span class="text-success">Online</span></td></tr>
+											<tr><td>2</td><td>PlayerB</td><td>110</td><td><span class="text-danger">Offline</span></td></tr>
+											<tr><td>3</td><td>PlayerC</td><td>105</td><td><span class="text-success">Online</span></td></tr>
+											<tr><td>4</td><td>PlayerA</td><td>120</td><td><span class="text-success">Online</span></td></tr>
+											<tr><td>5</td><td>PlayerB</td><td>110</td><td><span class="text-danger">Offline</span></td></tr>
+											<tr><td>6</td><td>PlayerC</td><td>105</td><td><span class="text-success">Online</span></td></tr>
+											<tr><td>7</td><td>PlayerA</td><td>120</td><td><span class="text-success">Online</span></td></tr>
+											<tr><td>8</td><td>PlayerB</td><td>110</td><td><span class="text-danger">Offline</span></td></tr>
+											<tr><td>9</td><td>PlayerC</td><td>105</td><td><span class="text-success">Online</span></td></tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+
+							<!-- Points Rankings -->
+							<div class="tab-pane fade" id="ranking-points" role="tabpanel" aria-labelledby="ranking-points-tab">
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped mb-0">
+										<thead>
+											<tr>
+												<th>#</th>
+												<th>Name</th>
+												<th>Points</th>
+												<th>Status</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr><td>1</td><td>PlayerX</td><td>900</td><td><span class="text-success">Online</span></td></tr>
+											<tr><td>2</td><td>PlayerY</td><td>850</td><td><span class="text-danger">Offline</span></td></tr>
+											<tr><td>3</td><td>PlayerZ</td><td>800</td><td><span class="text-success">Online</span></td></tr>
+											<tr><td>4</td><td>PlayerX</td><td>900</td><td><span class="text-success">Online</span></td></tr>
+											<tr><td>5</td><td>PlayerY</td><td>850</td><td><span class="text-danger">Offline</span></td></tr>
+											<tr><td>6</td><td>PlayerZ</td><td>800</td><td><span class="text-success">Online</span></td></tr>
+											<tr><td>7</td><td>PlayerX</td><td>900</td><td><span class="text-success">Online</span></td></tr>
+											<tr><td>8</td><td>PlayerY</td><td>850</td><td><span class="text-danger">Offline</span></td></tr>
+											<tr><td>9</td><td>PlayerZ</td><td>800</td><td><span class="text-success">Online</span></td></tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Upcoming Events -->
+				<div class="col-12 bg-white p-4 border shadow-sm">
+					<h5 class="text-center mb-4 text-dark fw-bold">Upcoming Events</h5>
+					<div class="table-responsive">
+						<table class="table table-bordered table-striped mb-0">
+							<tbody>
+								<tr><td>Blood Castle</td><td>00:46:47</td></tr>
+								<tr><td>Devil Square</td><td>01:14:44</td></tr>
+								<tr><td>Chaos Castle</td><td>00:14:26</td></tr>
+								<tr><td>Sky Event</td><td>01:44:22</td></tr>
+								<tr><td>Golden Dragon Invasion</td><td>00:43:57</td></tr>
+								<tr><td>Red Dragon Invasion</td><td>00:43:57</td></tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div> <!-- row -->
+		</div> <!-- p-4 bg-light shadow-lg -->
+
+		<!-- Footer -->
+		<footer class="py-4 text-light text-center">
+			<div class="container">
+				<div class="row justify-content-center mb-4">
+					<div class="col-auto">
+						<a href="#" class="footer-logo d-block">
+							<img src="assets/images/icon.png" alt="Moonex-Agency Logo Transparent" width="200" height="150" class="img-fluid" loading="lazy">
+						</a>
+					</div>
+				</div>
+				<div class="row justify-content-center text-center mb-4">
+					<div class="col-md-4 mb-3 mb-md-0">
+						<h5 class="text-uppercase mb-3 text-white">Quick Links</h5>
+						<p class="text-light mb-2">
+							<a href="/privacy-policy" class="text-decoration-none text-light">Privacy Policy</a>
+							<span class="text-white">/</span>
+							<a href="/terms-of-service" class="text-decoration-none text-light">Terms of Service</a>
+							<span class="text-white">/</span>
+							<a href="/about-us" class="text-decoration-none text-light">About Us</a>
+							<span class="text-white">/</span>
+							<a href="/faq" class="text-decoration-none text-light">FAQ</a>
+						</p>
+					</div>
+					<div class="col-md-4">
+						<h5 class="text-uppercase mb-3 text-white">Follow Us</h5>
+						<div class="d-flex justify-content-center gap-4">
+							<a href="#" title="Facebook" aria-label="Facebook" class="icon-link">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" aria-hidden="true" focusable="false">
+									<path d="M22.675 0H1.325C.593 0 0 .593 0 1.326v21.348C0 23.408.593 24 1.325 24h11.495v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.466.099 2.797.143v3.24l-1.918.001c-1.504 0-1.794.715-1.794 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.408 24 24 23.408 24 22.674V1.326C24 .593 23.408 0 22.675 0z"></path>
+								</svg>
+							</a>
+							<a href="#" title="X (formerly Twitter)" aria-label="X" class="icon-link">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20" fill="currentColor" width="24" height="24" aria-hidden="true" focusable="false">
+									<path d="M19.8 2.2a1 1 0 0 0-1.4 0L12 8.6 5.6 2.2A1 1 0 0 0 4.2 3.6L10.6 10 4.2 16.4a1 1 0 1 0 1.4 1.4L12 11.4l6.4 6.4a1 1 0 0 0 1.4-1.4L13.4 10l6.4-6.4a1 1 0 0 0 0-1.4z"></path>
+								</svg>
+							</a>
+							<a href="#" title="Discord" aria-label="Discord" class="icon-link">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" aria-hidden="true" focusable="false">
+									<path d="M20.317 4.3698a19.7913 19.7913 0 0 0-4.8851-1.5152.0741.0741 0 0 0-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 0 0-.0785-.037 19.7363 19.7363 0 0 0-4.8852 1.515.0699.0699 0 0 0-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 0 0 .0312.0561 19.9 19.9 0 0 0 6.061 3.0994.0777.0777 0 0 0 .0842-.0276c.4676-.6304.8881-1.2952 1.248-1.9942a.076.076 0 0 0-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 0 1-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 0 1 .0786-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 0 1 .0814.0095c.119.099.244.1971.372.2914a.077.077 0 0 1-.006.1276 12.2986 12.2986 0 0 1-1.873.8914.0766.0766 0 0 0-.0407.1067c.36.6989.7805 1.3637 1.2481 1.9942a.076.076 0 0 0 .0842.0277 19.9023 19.9023 0 0 0 6.062-3.1004.0823.0823 0 0 0 .0313-.0552c.5004-5.177-.8382-9.6519-3.5485-13.6604a.061.061 0 0 0-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9457 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2109 0 2.1758 1.0952 2.1569 2.419 0 1.3332-.946 2.4189-2.1569 2.4189z"></path>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<div class="row justify-content-center mt-5">
+					<div class="col-auto">
+						<p class="mb-0">&copy; 2025 MU Online Server.</p>
+						<p class="mb-0">Template by <a href="https://trifondinev.com">Trifon Dinev</a></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div> <!-- container my-5 -->
+
+	<!-- JavaScript -->
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+</body>
+</html>
