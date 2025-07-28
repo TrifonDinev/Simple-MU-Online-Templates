@@ -1,11 +1,17 @@
-Simple MU Online Templates Written By Me (<a href="https://trifondinev.com">Trifon Dinev</a>)
+# Simple MU Online Templates
+Some simple MU Online HTML5/CSS3 templates that are quite old and nothing special.
 
-Templates are using <a href="https://getbootstrap.com/docs/3.3/">Bootstrap v3.3.7</a> and <a href="http://fontawesome.io/">Font Awesome v4.7.0</a>
+<p align="center">
+  <img src="images/Template01-v5.png" alt="Simple MU Online Template with Bootstrap 5.3.7">
+  <img src="images/Template03-v3.png" alt="Simple MU Online Template with Bootstrap 3.3.7 and FontAwesome" width="380">
+  <img src="images/Template02-v3.png" alt="Simple MU Online Template with Bootstrap 3.3.7 and FontAwesome" width="380">
+  <img src="images/Template01-v3.png" alt="Simple MU Online Template with Bootstrap 3.3.7 and FontAwesome" width="380">
+  <img src="images/Coming-Soon-Template.png" alt="Coming Soon Template" width="380">
+</p>
 
-Each template has valid HTML5 and CSS3 (custom.css) code.
+## Features:
+- Responsive templates based on Bootstrap 3.3.7, Bootstrap 5.3.7
+- Each template has valid HTML5 and CSS3 (custom.css)
 
-In Coming Soon Template folder has more than one background image, which u can find in assets/images folder.
-
-If u want to use some template for your system, please leave the footer credits or just add Template By Trifon Dinev !!!
-
-All files in this repository are released under GNU General Public License v2.0. See <a href="https://github.com/TrifonDinev/Simple-MU-Online-Templates/blob/master/LICENSE">LICENSE</a> file for more information.
+## License:
+Licensed under the [MIT License](LICENSE).
