@@ -1,130 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		
-		<!-- Meta Tags --> 
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Coming Soon Simple MU Online Template Maded With Bootstrap by Trifon Dinev">
-		<meta name="author" content="Trifon Dinev">
-		
-		<!-- Title -->
-		<title>Coming Soon - Your Project/Site Title</title>
-		
-		<!-- Bootstrap core CSS -->
-		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-		
-		<!-- Font Awesome CSS -->
-		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
-		
-		<!-- Custom CSS -->
-		<link rel="stylesheet" href="assets/css/custom.css">
-		
-	</head>
-	
-	<body>
-		
-		<!-- Top Text & Times -->
-		<div class="container">
-			<div class="row">
-				<div class="content">
-					<h1>COMING SOON</h1>
-					<h2>Example Text For Your Server/Project</h2>
-					
-					<div class="times">
-						<div class="days-wrapper">
-							<span id="days"></span>
-						</div>
-						<div class="hours-wrapper">
-							<span id="hours"></span> 
-						</div>
-						<div class="minutes-wrapper">
-							<span id="minutes"></span> 
-						</div>
-						<div class="seconds-wrapper">
-							<span id="seconds"></span> 
-						</div>
-					</div>
-				</div>
-				
-			<!-- Subscribe Form & Social -->
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12 subscribe">
-							<h3>Subscribe to our newsletter</h3>
-							<p>Sign up now to our newsletter and you'll be one of the first to know when the site is ready:</p>                    
-							<form class="form-inline" method="post">
-								<div class="form-group">
-									<label class="sr-only" for="subscribe-email">Email address</label>
-									<input type="text" name="email" placeholder="Enter your email..." class="subscribe-email form-control" id="subscribe-email">
-								</div>
-								<button type="submit" class="btn">Subscribe</button>
-							</form>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-12 social">
-							<a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
-							<a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
-							<a href="#" data-toggle="tooltip" data-placement="top" title="Dribbble"><i class="fa fa-dribbble"></i></a>
-							<a href="#" data-toggle="tooltip" data-placement="top" title="Google Plus"><i class="fa fa-google-plus"></i></a>
-							<a href="#" data-toggle="tooltip" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a>
-							<a href="#" data-toggle="tooltip" data-placement="top" title="Flickr"><i class="fa fa-flickr"></i></a>
-						</div>
-					</div>
-				</div> <!-- Container -->
-				
-				
-			</div> <!-- Row -->
-		</div> <!-- Container -->
-		
-		<!-- Footer -->
-		<footer>
-			<div class="container">
-				<p class="text-center">Copyright &copy; 2017. Template Coded & Designed By <a href="https://trifondinev.com">Trifon Dinev</a></p>
-			</div>	
-		</footer>
-		
-		
-		<!-- JavaScript -->	
-		
-		<script>
-			// Set the date we're counting down to
-			var countDownDate = new Date("Jan 5, 2019 15:37:25").getTime();
-			
-			// Update the count down every 1 second
-			var countdownfunction = setInterval(function() {
-				
-				// Get todays date and time
-				var now = new Date().getTime();
-				
-				// Find the distance between now an the count down date
-				var distance = countDownDate - now;
-				
-				// Time calculations for days, hours, minutes and seconds
-				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-				
-				// Output the result in an element with id
-				document.getElementById("days").innerHTML = days + "<br> days "
-				document.getElementById("hours").innerHTML = hours + "<br> hours "
-				document.getElementById("minutes").innerHTML = minutes + "<br> minutes "
-				document.getElementById("seconds").innerHTML = seconds + "<br> seconds "
-				
-				
-				// If the count down is over, write some text 
-				if (distance < 0) {
-					clearInterval(countdownfunction);
-					document.getElementById("days").innerHTML = "TIME EXPIRED";
-					document.getElementById("hours").innerHTML = "TIME EXPIRED";
-					document.getElementById("minutes").innerHTML = "TIME EXPIRED";
-					document.getElementById("seconds").innerHTML = "TIME EXPIRED";
-				}
-			}, 100);
-		</script>
-		
-	</body>
-</html>
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Coming Soon Simple MU Online Template">
+  <meta name="author" content="Trifon Dinev">
+
+  <!-- Title -->
+  <title>Coming Soon - Your Project/Site Title</title>
+
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <main class="content" role="main">
+    <h1>COMING SOON</h1>
+    <h2>Example Text For Your Server/Project</h2>
+
+    <!-- Countdown timer -->
+    <section class="times" aria-label="Countdown timer">
+      <div class="days-wrapper"><span id="days"></span></div>
+      <div class="hours-wrapper"><span id="hours"></span></div>
+      <div class="minutes-wrapper"><span id="minutes"></span></div>
+      <div class="seconds-wrapper"><span id="seconds"></span></div>
+    </section>
+
+    <!-- Newsletter Subscription -->
+    <section class="subscribe" aria-label="Newsletter Subscription">
+      <h3>Subscribe to our newsletter</h3>
+      <p>Be among the first to know when the site/server launches:</p>
+      <form method="post" novalidate>
+        <label for="subscribe-email" class="visually-hidden">Email address</label>
+        <input type="email" id="subscribe-email" name="email" placeholder="Enter your email..." class="subscribe-email" required>
+        <button type="submit" class="btn">Subscribe</button>
+      </form>
+    </section>
+
+    <!-- Social Links -->
+    <section class="social" aria-label="Social Links">
+      <!-- Facebook Icon (SVG) -->
+      <a href="#" title="Facebook" aria-label="Facebook" class="icon-link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" aria-hidden="true" focusable="false">
+          <path d="M22.675 0H1.325C.593 0 0 .593 0 1.326v21.348C0 23.408.593 24 1.325 24h11.495v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.466.099 2.797.143v3.24l-1.918.001c-1.504 0-1.794.715-1.794 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.408 24 24 23.408 24 22.674V1.326C24 .593 23.408 0 22.675 0z">
+          </svg>
+        </a>
+
+        <!-- X (formerly Twitter) Icon (SVG) -->
+        <a href="#" title="X (formerly Twitter)" aria-label="X" class="icon-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20" fill="currentColor" width="24" height="24" aria-hidden="true" focusable="false">
+            <path d="M19.8 2.2a1 1 0 0 0-1.4 0L12 8.6 5.6 2.2A1 1 0 0 0 4.2 3.6L10.6 10 4.2 16.4a1 1 0 1 0 1.4 1.4L12 11.4l6.4 6.4a1 1 0 0 0 1.4-1.4L13.4 10l6.4-6.4a1 1 0 0 0 0-1.4z">
+            </svg>
+          </a>
+
+          <!-- Discord Icon (SVG) -->
+          <a href="#" title="Discord" aria-label="Discord" class="icon-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" aria-hidden="true" focusable="false">
+              <path d="M20.317 4.3698a19.7913 19.7913 0 0 0-4.8851-1.5152.0741.0741 0 0 0-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 0 0-.0785-.037 19.7363 19.7363 0 0 0-4.8852 1.515.0699.0699 0 0 0-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 0 0 .0312.0561 19.9 19.9 0 0 0 6.061 3.0994.0777.0777 0 0 0 .0842-.0276c.4676-.6304.8881-1.2952 1.248-1.9942a.076.076 0 0 0-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 0 1-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 0 1 .0786-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 0 1 .0814.0095c.119.099.244.1971.372.2914a.077.077 0 0 1-.006.1276 12.2986 12.2986 0 0 1-1.873.8914.0766.0766 0 0 0-.0407.1067c.36.6989.7805 1.3637 1.2481 1.9942a.076.076 0 0 0 .0842.0277 19.9023 19.9023 0 0 0 6.062-3.1004.0823.0823 0 0 0 .0313-.0552c.5004-5.177-.8382-9.6519-3.5485-13.6604a.061.061 0 0 0-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9457 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2109 0 2.1758 1.0952 2.1569 2.419 0 1.3332-.946 2.4189-2.1569 2.4189z">
+              </svg>
+            </a>
+          </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+          <p>&copy; 2025. Template by <a href="https://trifondinev.com" target="_blank" rel="noopener noreferrer">Trifon Dinev</a></p>
+        </footer>
+
+        <!-- JavaScript to handle countdown timer -->
+        <script>
+        const countDownDate = new Date("Jan 5, 2030 15:37:25").getTime();
+
+        const daysEl = document.getElementById("days");
+        const hoursEl = document.getElementById("hours");
+        const minutesEl = document.getElementById("minutes");
+        const secondsEl = document.getElementById("seconds");
+
+        const updateCountdown = () => {
+          const now = Date.now();
+          const distance = countDownDate - now;
+
+          if (distance < 0) {
+            clearInterval(timer);
+            [daysEl, hoursEl, minutesEl, secondsEl].forEach(el => {
+              el.textContent = "TIME EXPIRED";
+            });
+            return;
+          }
+
+          const days = Math.floor(distance / 86400000);
+          const hours = Math.floor((distance % 86400000) / 3600000);
+          const minutes = Math.floor((distance % 3600000) / 60000);
+          const seconds = Math.floor((distance % 60000) / 1000);
+
+          // Using innerHTML because of <br>
+          daysEl.innerHTML = days + "<br>days";
+          hoursEl.innerHTML = hours + "<br>hours";
+          minutesEl.innerHTML = minutes + "<br>minutes";
+          secondsEl.innerHTML = seconds + "<br>seconds";
+        };
+
+        const timer = setInterval(updateCountdown, 1000);
+        updateCountdown();
+      </script>
+
+    </body>
+    </html>

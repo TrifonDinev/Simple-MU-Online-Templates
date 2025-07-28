@@ -1,0 +1,214 @@
+:root {
+  --color-primary: #e75967;
+  --color-bg-dark: rgba(45, 45, 45, 0.7);
+  --color-bg-social: #555;
+  --color-text-footer: #ccc;
+  --font-main: "Courier New", Courier, monospace;
+  --font-alt: 'Lato', sans-serif;
+}
+
+/* Global reset and box-sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Visually hidden helper for accessibility */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: var(--font-main);
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Main content flex grow to push footer down */
+.content {
+  flex: 1;
+  text-align: center;
+  font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+  padding: 0 10px;
+  word-wrap: break-word;
+}
+
+/* Countdown timer blocks */
+.times {
+  margin-top: 80px;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.times > div {
+  display: inline-block;
+  width: 160px;
+  height: 150px;
+  margin: 2px;
+  padding-top: 30px;
+  background: var(--color-bg-dark);
+  font-size: 24px;
+  line-height: 48px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  user-select: none;
+  cursor: default;
+}
+
+.times > div:hover {
+  background: var(--color-primary);
+  text-shadow: none;
+}
+
+.times .days,
+.times .hours,
+.times .minutes,
+.times .seconds {
+  font-size: 80px;
+  line-height: 90px;
+}
+
+/* Subscribe section */
+.subscribe {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.subscribe h3 {
+  font-size: 25px;
+  text-shadow: 0 1px 5px #080808;
+  margin-bottom: 0.5em;
+}
+
+.subscribe p {
+  font-size: 18px;
+  text-shadow: 0 1px 5px #080808;
+  margin: 0 0 1em;
+}
+
+.subscribe form {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.subscribe form input.subscribe-email {
+  height: 46px;
+  padding: 0 16px;
+  background: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  color: #333;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 1 250px;
+  max-width: 400px;
+}
+
+.subscribe form input.subscribe-email::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+.subscribe form input.subscribe-email:focus {
+  outline: none;
+  border-color: #e75967;
+  box-shadow: 0 0 8px rgba(231, 89, 103, 0.6);
+}
+
+.subscribe form button {
+  width: 130px;
+  height: 46px;
+  background: var(--color-primary);
+  border: none;
+  font-family: var(--font-alt);
+  font-size: 18px;
+  line-height: 46px;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex-shrink: 0;
+}
+
+.subscribe form button:hover,
+.subscribe form button:focus,
+.subscribe form button:active {
+  background: #555;
+  outline: none;
+  color: #fff;
+}
+
+/* Social icons */
+.social {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin: 3px;
+  background: var(--color-bg-social);
+  border-radius: 50%;
+  color: #fff;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.social a:hover,
+.social a:focus {
+  outline: none;
+  background: var(--color-primary);
+}
+
+/* Footer */
+footer {
+  background: #222;
+  padding: 10px;
+  text-align: center;
+  font-family: var(--font-main);
+  color: var(--color-text-footer);
+  font-size: 0.95rem;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+footer a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover,
+footer a:focus {
+  color: #fff;
+  outline: none;
+}
